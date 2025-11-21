@@ -1,0 +1,25 @@
+{
+  "name": "psgutil",
+  "version": "1.0.0",
+  "description": "Utilities for Logging and Input Validation",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "no test specified"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbalazs222/psgutil.git"
+  },
+  "keywords": [
+    "validator",
+    "input",
+    "logging"
+  ],
+  "author": "sbalazs222",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbalazs222/psgutil/issues"
+  },
+  "homepage": "https://github.com/sbalazs222/psgutil#readme"
+}
