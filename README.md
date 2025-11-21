@@ -1,6 +1,6 @@
 # PSGUtil
 
-PSGUtil is a utility library designed to simplify common validation tasks and logging operations. It provides regex-based validation for various input types and customizable logging functions.
+PSGUtil is a utility library designed to simplify common validation tasks and logging operations for Express. It provides regex-based validation for various input types and customizable logging functions.
 
 ## Project Structure
 
