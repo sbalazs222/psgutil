@@ -28,6 +28,7 @@ function colorLog(req, res, next) {
 
 function errorLog(error, req, res, next) {
   console.error(`${red}Error:${reset} ${error.message}\n${gray}${error.stack}${reset}`);
+  res.status(500).send('Internal Server Error');
 };
 
 export { colorLog, errorLog };
