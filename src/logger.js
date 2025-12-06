@@ -12,7 +12,7 @@ const statusColor = (statusCode) => (
     statusCode >= 400 ? red :
       statusCode >= 300 ? cyan :
         green
-)
+);
 
 function colorLog(req, res, next) {
   const start = Date.now();
