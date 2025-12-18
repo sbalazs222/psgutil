@@ -1,11 +1,11 @@
 {
   "name": "psgutil",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Utilities for Logging and Input Validation",
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "test": "no test specified"
+    "test": "echo no test specified"
   },
   "repository": {
     "type": "git",
