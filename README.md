@@ -9,6 +9,7 @@ PSGUtil is a utility library designed to simplify common validation tasks and lo
 - **[`src/logger.js`]**: Contains logging utilities for color-coded and error-specific logs.
 - **[`src/regex.js`]**: Defines reusable regular expressions for validating inputs like emails, passwords, phone numbers, and usernames.
 - **[`src/validate.js`]**: Implements validation functions for input arrays, field counts, and required fields.
+- **[`src/colors.js`]**: Defines ANSI console colors.
 
 ## Features
 
