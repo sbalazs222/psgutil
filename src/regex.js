@@ -4,16 +4,26 @@ export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export const phoneRegex = /^\+?[0-9]{7,15}$/;
 
 /**
- * 
- * @param {'username' | 'password' | 'email' | 'phone'} type Type of input to validate.
- * @param {string} input The value to test 
- * @returns {boolean} Returns `true` if the input passes the validation, otherwise `false`
- * 
- * @throws {TypeError} Throws if an invalid type is provided
- * 
+ * Type of input to validate.
+ * @typedef {'username' | 'password' | 'email' | 'phone'} ValidationType
+ */
+
+/**
+ * Validation rules for each type:
+ * - **username**: Must start with a letter, can contain letters, numbers, underscores, 3-16 characters.
+ * - **password**: At least 8 characters, must include uppercase, lowercase, and a number.
+ * - **email**: Valid email format (e.g., user@example.com).
+ * - **phone**: Valid phone number (digits, optional country code, e.g., +1234567890).
+ *
+ * @param {ValidationType} type - The kind of input to validate.
+ * @param {string} input - The value to test against the validation rules.
+ * @returns {boolean} Returns `true` if the input passes the validation, otherwise `false`.
+ *
+ * @throws {Error} Throws if an invalid type is provided.
+ *
  * @example
  * validate('email', 'user@example.com'); // true
- * validate('username', 'John#Doe'); // true
+ * validate('username', 'John_Doe'); // true
  * validate('password', '123'); // false
  */
 export default function validate(type, input) {
