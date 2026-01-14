@@ -1,6 +1,6 @@
 {
   "name": "psgutil",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Utilities for Logging and Input Validation",
   "main": "main.js",
   "type": "module",
