@@ -6,7 +6,10 @@ const statusColor = (statusCode) => {
   if (statusCode >= 300) return c.cyan;
   return c.green;
 };
-
+/**
+ * Logger function middleware for express
+ * @description Call as express middleware
+ */
 function colorLog(req, res, next) {
   const start = Date.now();
   res.on('finish', () => {
@@ -24,7 +27,10 @@ function colorLog(req, res, next) {
   });
   next();
 }
-
+/**
+ * Error logger function middleware for express
+ * @description Call as express error middleware
+ */
 function errorLog(error, req, res, next) {
   console.error(`${c.red}Error:${c.reset} ${error.message}\n${c.gray}${error.stack}${c.reset}`);
   if (res.headersSent) return next(error);
