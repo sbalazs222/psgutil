@@ -32,7 +32,7 @@ function colorLog(req, res, next) {
  * @description Call as express error middleware
  */
 function errorLog(error, req, res, next) {
-  console.error(`${c.red}Error:${c.reset} ${error.message}\n${c.gray}${error.stack}${c.reset}`);
+  console.error(`${c.red}Error:${c.reset} ${error.message || error.code}\n${c.gray}${error.stack}${c.reset}`);
   if (res.headersSent) return next(error);
   res.status(500).send('Internal Server Error');
 }
